@@ -6,12 +6,12 @@ import PropertyCategories from './Fronend/PropertyCategories';
 import ExclusiveDeals from './Fronend/ExclusiveDeals';
 import HotListings from './Fronend/HotListings';
 import Footer from './Fronend/Footer';
-import Residential from './Fronend/Components/Residential'
+import Residential from './Fronend/Components/Models/Residential'
 import { Routes, Route, BrowserRouter as Router } from 'react-router-dom';
-import Commercial from './Fronend/Components/Commercial';
-import Services from './Fronend/Components/Services';
-import Contact from './Fronend/Components/Contact';
-import Agents from './Fronend/Components/Agents';
+import Commercial from './Fronend/Components/Models/Commercial';
+import Services from './Fronend/Components/Models/Services';
+import Contact from './Fronend/Components/Models/Contact';
+import Agents from './Fronend/Components/Models/Agents';
 
 const App: React.FC = () => {
   return (

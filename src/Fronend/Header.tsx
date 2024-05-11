@@ -8,7 +8,7 @@ const Header: React.FC = () => {
     <header className="header">
       <nav>
         <ul className="nav-left">
-          <li> Twinnel </li>
+          <li><Link to="/">Twinnel</Link></li>
           <li> <FaRegBuilding /> </li>
         </ul>
         <ul className="nav-center">

@@ -4,38 +4,41 @@
     height: 100vh; /* This will make the main section take up the full viewport height */
     padding: 20px;
   }
-  
+
   .main .content {
     flex: 1;
   }
-  
+
   .main h1 {
-    font-size: 24px;
+    margin-top: 20%;
     font-weight: bold;
+    font-size: 70px;
   }
-  
+
   .main p {
     color: #6c757d;
+    font-size: 30px;
   }
-  
+
   .main .search-form {
     margin-top: 20px;
     display: flex;
-    justify-content: space-between;
   }
-  
+
   .main input,
   .main button {
     padding: 10px;
+    width: 70%;
   }
-  
+
   .main button {
     background-color: #007bff;
     color: white;
     border: none;
     cursor: pointer;
+    width: 20%;
   }
-  
+
   .main .image {
     flex: 1;
     /* Add your image as a background image */
@@ -45,4 +48,3 @@
     width: 70%;
     height: 70%;
   }
-  
