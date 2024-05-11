@@ -12,11 +12,11 @@ const Header: React.FC = () => {
           <li> <FaRegBuilding /> </li>
         </ul>
         <ul className="nav-center">
-          <li>Residencial</li>
-          <li>Commercial</li>
-          <li>Agents</li>
-          <li>Services</li>
-          <li>Contact</li>
+          <li><Link to="/residential">Residencial</Link></li>
+          <li><Link to="/commercial">Commercial</Link></li>
+          <li><Link to="/agents">Agents</Link></li>
+          <li><Link to="/services">Services</Link></li>
+          <li><Link to="/contact">Contact</Link></li>
         </ul>
         <ul className="nav-end">
           <li>
