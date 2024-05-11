@@ -3,11 +3,13 @@
   display: flex;
 }
 
-.filter-panel {
-  margin-top: 25px;
-  margin-left: 1%;
-  width: 10%;
-  background-color: black;
+.filters-panel {
+  margin-top: 50px;
+  margin-left: 10px;
+  width: 15%;
+  background-color: rgb(236, 234, 234);
+  border-radius: 15px;
+  height: 315px;
 }
 
 .property-cards {
@@ -49,4 +51,12 @@
   cursor: pointer;
   border-radius: 20%;
   margin-top: 45%;
+}
+
+.property-filter
+{
+  margin-top: 30px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }

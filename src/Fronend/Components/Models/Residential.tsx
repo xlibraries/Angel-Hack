@@ -1,5 +1,7 @@
 import React from 'react';
 import '../Styles/Residential.css'; // Import the CSS file
+import Agent3 from '../../../assets/Agent3.jpg';
+import Agent4 from '../../../assets/Agent4.jpg';
 
 const Residential: React.FC = () => {
   const hrefLink = 'https://ac14-2405-204-5215-ab0b-e5f2-e969-3851-b5dd.ngrok-free.app/';
@@ -77,8 +79,8 @@ const Residential: React.FC = () => {
 
   return (
     <div className="residential">
-      <div className="filter-panel">
-        <div  className='type-filter'>
+      <div className="filters-panel">
+        <div  className='property-filter'>
           <label htmlFor="type-filter">Type:</label>
           <select id="type-filter" value={typeFilter} onChange={handleTypeFilterChange}>
             <option value="">All</option>
@@ -87,7 +89,7 @@ const Residential: React.FC = () => {
             <option value="Apartment">Apartment</option>
           </select>
           </div>
-          <div  className='room-filter'>
+        <div  className='property-filter'>
           <label htmlFor="room-filter">Room:</label>
           <select id="room-filter" value={roomFilter} onChange={handleRoomFilterChange}>
             <option value="">All</option>
@@ -98,7 +100,7 @@ const Residential: React.FC = () => {
             <option value="5 BHK">5 BHK</option>
           </select>
           </div>
-          <div  className='ownership-filter'>
+        <div  className='property-filter'>
           <label htmlFor="ownership-filter">Ownership:</label>
           <select id="ownership-filter" value={ownershipFilter} onChange={handleOwnershipFilterChange}>
             <option value="">All</option>
@@ -106,11 +108,11 @@ const Residential: React.FC = () => {
             <option value="Rent">Rent</option>
           </select>
           </div>
-          <div  className='verified-filter'>
+        <div  className='property-filter'>
           <label htmlFor="verified-filter">Verified:</label>
           <input type="checkbox" id="verified-filter" checked={verifiedFilter} onChange={handleVerifiedFilterChange} />
           </div>
-          <div  className='location-filter'>
+        <div  className='property-filter'>
           <label htmlFor="location-filter">Location:</label>
           <select id="location-filter" value={locationFilter} onChange={handleLocationFilterChange}>
             <option value="">All</option>
@@ -127,7 +129,7 @@ const Residential: React.FC = () => {
             <option value="Bellandur">Bellandur</option>
           </select>
           </div>
-          <div  className='price-filter'>
+        <div  className='property-filter'>
           <label htmlFor="price-filter">Price:</label>
           <select id="price-filter" value={priceFilter} onChange={handlePriceFilterChange}>
             <option value="">All</option>

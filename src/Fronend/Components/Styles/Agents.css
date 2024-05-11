@@ -24,7 +24,6 @@
 
 .property-card {
   position: relative;
-  background-image: url('../../../assets/Agent1.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }
