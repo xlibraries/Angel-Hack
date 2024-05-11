@@ -1,0 +1,30 @@
+.hot-listings {
+  padding: 20px;
+  flex: 1;
+}
+
+.hot-listings h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.hot-listings .listing {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.hot-listings button {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.hot-listings .listings-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}

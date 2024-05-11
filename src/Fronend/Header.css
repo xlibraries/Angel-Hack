@@ -4,11 +4,28 @@
   text-align: center;
 }
 
-.header .nav-list {
+.header .nav-left {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: left;
+}
+
+.header .nav-center {
   list-style-type: none;
   padding: 0;
   display: flex;
   justify-content: center;
+}
+.header nav {
+  display: flex;
+  justify-content: space-between;
+}
+.header .nav-end {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .header li {

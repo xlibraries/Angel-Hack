@@ -1,5 +1,12 @@
 .main {
+    display: flex;
+    justify-content: space-between;
+    height: 100vh; /* This will make the main section take up the full viewport height */
     padding: 20px;
+  }
+  
+  .main .content {
+    flex: 1;
   }
   
   .main h1 {
@@ -27,5 +34,15 @@
     color: white;
     border: none;
     cursor: pointer;
+  }
+  
+  .main .image {
+    flex: 1;
+    /* Add your image as a background image */
+    background-image: url('../assets/Main-image.png');
+    background-size: cover;
+    background-position: center;
+    width: 70%;
+    height: 70%;
   }
   

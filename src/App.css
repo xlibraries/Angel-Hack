@@ -1,3 +1,20 @@
 .app {
   font-family: Arial, sans-serif;
 }
+
+.deals-listings {
+  display: flex;
+  justify-content: space-between;
+}
+
+.deals-listings > div {
+  margin: 20px;
+}
+
+.deals-listings > :first-child {
+  flex: 0.15;
+}
+
+.deals-listings > :last-child {
+  flex: 0.85;
+}
