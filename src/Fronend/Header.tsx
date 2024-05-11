@@ -30,6 +30,7 @@ const Header: React.FC = () => {
           </li>
         </ul>
       </nav>
+      <hr />
     </header>
   );
 };
