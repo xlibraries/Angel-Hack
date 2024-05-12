@@ -7,16 +7,16 @@ const Header: React.FC = () => {
   return (
     <header className="header">
       <nav>
-        <ul className="nav-left">
-          <li><Link to="/">Twinnel</Link></li>
-          <li> <FaRegBuilding /> </li>
+        <ul className="nav-left header-logo">
+          <li className='header-logo'><Link to="/"  style={{ color: 'white' }}>Twinnel</Link></li>
+          <li className='header-logo'> <FaRegBuilding /> </li>
         </ul>
         <ul className="nav-center">
-          <li><Link to="/residential">Residencial</Link></li>
-          <li><Link to="/commercial">Commercial</Link></li>
-          <li><Link to="/agents">Agents</Link></li>
-          <li><Link to="/services">Services</Link></li>
-          <li><Link to="/contact">Contact</Link></li>
+          <li className='header-button'><Link to="/residential" style={{ color: 'white' }}>Residencial</Link></li>
+          <li className='header-button'><Link to="/commercial"  style={{ color: 'white' }}>Commercial</Link></li>
+          <li className='header-button'><Link to="/agents"  style={{ color: 'white' }}>Agents</Link></li>
+          <li className='header-button'><Link to="/services"  style={{ color: 'white' }}>Services</Link></li>
+          <li className='header-button'><Link to="/contact"  style={{ color: 'white' }}>Contact</Link></li>
         </ul>
         <ul className="nav-end">
           <li>

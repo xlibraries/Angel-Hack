@@ -4,6 +4,7 @@ import './PropertyCategories.css';
 const PropertyCategories: React.FC = () => {
   return (
     <section className="property-categories">
+    <hr />
       <h2>Property Categories</h2>
       <div className="categories">
         <div className="category">Houses</div>

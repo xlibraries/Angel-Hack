@@ -1,24 +1,29 @@
 import React from 'react';
 import '../Styles/Agents.css'; // Import the CSS file
-import Agent1 from '../../../assets/Agent1.jpg';
-import Agent2 from '../../../assets/Agent2.jpg';
-import Agent3 from '../../../assets/Agent3.jpg';
-import Agent4 from '../../../assets/Agent4.jpg';
+import Agent1 from '../../../assets/Brokers/1.jpg';
+import Agent2 from '../../../assets/Brokers/2.jpg';
+import Agent3 from '../../../assets/Brokers/3.jpg';
+import Agent4 from '../../../assets/Brokers/4.jpg';
+import Agent5 from '../../../assets/Brokers/5.jpg';
+import Agent6 from '../../../assets/Brokers/6.jpg';
+import Agent7 from '../../../assets/Brokers/7.jpg';
+import Agent8 from '../../../assets/Brokers/8.jpg';
+import Agent9 from '../../../assets/Brokers/9.jpg';
 
 
 const Agents: React.FC = () => {
   const hrefLink = 'https://ac14-2405-204-5215-ab0b-e5f2-e969-3851-b5dd.ngrok-free.app/';
 
   const brokers = [
-    { name: 'Broker1', description: 'Experienced in residential and commercial properties.', rating: '1/5', commission: '10%', dealsClosed: 100, verified: true, backgroundUrl: Agent1  },
+    { name: 'Broker1', description: 'Experienced in residential and commercial properties.', rating: '3/5', commission: '10%', dealsClosed: 100, verified: true, backgroundUrl: Agent1  },
     { name: 'Broker2', description: 'Specializes in luxury real estate.', rating: '2/5', commission: '15%', dealsClosed: 200, verified: false, backgroundUrl: Agent2  },
     { name: 'Broker3', description: 'Known for excellent customer service.', rating: '2/5', commission: '20%', dealsClosed: 150, verified: true, backgroundUrl: Agent3  },
     { name: 'Broker4', description: 'Experienced in residential and commercial properties.', rating: '4.7/5', commission: '10%', dealsClosed: 100, verified: true, backgroundUrl: Agent4  },
-    { name: 'Broker5', description: 'Specializes in luxury real estate.', rating: '3.5/5', commission: '15%', dealsClosed: 200, verified: false, backgroundUrl: Agent4  },
-    { name: 'Broker6', description: 'Known for excellent customer service.', rating: '4.6/5', commission: '20%', dealsClosed: 150, verified: true, backgroundUrl: Agent3  },
-    { name: 'Broker7', description: 'Experienced in residential and commercial properties.', rating: '4.7/5', commission: '10%', dealsClosed: 100, verified: true, backgroundUrl: Agent2  },
-    { name: 'Broker8', description: 'Specializes in luxury real estate.', rating: '1.5/5', commission: '15%', dealsClosed: 200, verified: false, backgroundUrl: Agent1},
-    { name: 'Broker9', description: 'Known for excellent customer service.', rating: '2.6/5', commission: '20%', dealsClosed: 150, verified: true, backgroundUrl: Agent1},
+    { name: 'Broker5', description: 'Specializes in luxury real estate.', rating: '3.5/5', commission: '15%', dealsClosed: 200, verified: false, backgroundUrl: Agent5  },
+    { name: 'Broker6', description: 'Known for excellent customer service.', rating: '4.6/5', commission: '20%', dealsClosed: 150, verified: true, backgroundUrl: Agent6  },
+    { name: 'Broker7', description: 'Experienced in residential and commercial properties.', rating: '4.7/5', commission: '10%', dealsClosed: 100, verified: true, backgroundUrl: Agent7  },
+    { name: 'Broker8', description: 'Specializes in luxury real estate.', rating: '1.5/5', commission: '15%', dealsClosed: 200, verified: false, backgroundUrl: Agent8},
+    { name: 'Broker9', description: 'Known for excellent customer service.', rating: '2.6/5', commission: '20%', dealsClosed: 150, verified: true, backgroundUrl: Agent9},
     { name: 'Broker10', description: 'Experienced in residential and commercial properties.', rating: '4.7/5', commission: '10%', dealsClosed: 100, verified: true, backgroundUrl: Agent2},
     { name: 'Broker11', description: 'Specializes in luxury real estate.', rating: '3.5/5', commission: '15%', dealsClosed: 200, verified: false, backgroundUrl: Agent3},
     { name: 'Broker12', description: 'Known for excellent customer service.', rating: '2.6/5', commission: '20%', dealsClosed: 150, verified: true, backgroundUrl: Agent4},
@@ -93,12 +98,8 @@ const Agents: React.FC = () => {
       <div className="property-cards">
         {filteredBrokers.map((broker, index) => (
           <div key={broker.name} className="property-card" style={{ backgroundImage: `url(${broker.backgroundUrl})` }}>
-            <p className=''>{broker.name}</p>
-            <div className="description">{broker.description}</div>
-            <div className="rating">{broker.rating}</div>
-            <div className="commission">{broker.commission}</div>
-            <div className="deals-closed">{broker.dealsClosed}</div>
-            <div className="verified">{broker.verified ? 'Verified' : 'Not Verified'}</div>
+            <div className="description">{broker.name } is {broker.verified ? 'Verified' : 'Not Verified'} via Twinnel  has {broker.description} with a {broker.rating} of, so far has closed {broker.dealsClosed} with an average commision of {broker.commission} </div>
+            <div className="verified"></div>
             <button className='experience-button' onClick={() => window.location.href = hrefLink}>
               Consult Now
             </button>

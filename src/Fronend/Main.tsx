@@ -12,7 +12,8 @@ const Main: React.FC = () => {
           <button type="submit">Search</button>
         </form>
       </div>
-      <div className="image"></div>
+      <div className="image">
+      </div>
     </main>
   );
 };

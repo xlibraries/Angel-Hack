@@ -1,5 +1,6 @@
 .exclusive-deals {
-  padding: 20px;
+  margin-top: -8%;
+  padding: 5%;
   flex: 1;
 }
 
@@ -12,4 +13,8 @@
   margin-top: 20px;
   padding: 10px;
   border: 1px solid #ddd;
+  border-radius: 15px;
+  width: 150px;
+  background-color: black;
+  color: white;
 }

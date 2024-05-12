@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     height: 100vh; /* This will make the main section take up the full viewport height */
-    padding: 20px;
+    padding: 5%;
   }
 
   .main .content {
@@ -13,6 +13,8 @@
     margin-top: 20%;
     font-weight: bold;
     font-size: 70px;
+    z-index: 1;
+    background-color: snow;
   }
 
   .main p {

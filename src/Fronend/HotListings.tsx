@@ -8,13 +8,15 @@ const HotListings: React.FC = () => {
       <div className="listings-container">
         <div className="listing">
           <h3>Spacious villa with</h3>
-          <button>Add to cart</button>
+          <button>Check Them</button>
         </div>
         <div className="listing">
           <h3>Fine Dining Experience</h3>
+          <button>Check Them</button>
         </div>
         <div className="listing">
           <h3>Mountain view villa with</h3>
+          <button>Check Them</button>
         </div>
       </div>
 
@@ -26,24 +28,31 @@ const HotListings: React.FC = () => {
         </div>
         <div className="listing">
           <h3>Urban Living</h3>
+          <button>Check Them</button>
         </div>
         <div className="listing">
           <h3>Villa/ Indenpendent House</h3>
+          <button>Add to cart</button>
         </div>
         <div className="listing">
           <h3>Rented Housing</h3>
+          <button>Add to cart</button>
         </div>
         <div className="listing">
           <h3>PGs</h3>
+          <button>Add to cart</button>
         </div>
         <div className="listing">
           <h3>Plot/ Land</h3>
+          <button>Add to cart</button>
         </div>
         <div className="listing">
           <h3>Buy Commercial</h3>
+          <button>Add to cart</button>
         </div>
         <div className="listing">
           <h3>Lease Commercial</h3>
+          <button>Add to cart</button>
         </div>
       </div>
     </section>
