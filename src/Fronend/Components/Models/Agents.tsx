@@ -15,18 +15,18 @@ const Agents: React.FC = () => {
   const hrefLink = 'https://ac14-2405-204-5215-ab0b-e5f2-e969-3851-b5dd.ngrok-free.app/';
 
   const brokers = [
-    { name: 'Broker1', description: 'Experienced in residential and commercial properties.', rating: '3/5', commission: '10%', dealsClosed: 100, verified: true, backgroundUrl: Agent1  },
-    { name: 'Broker2', description: 'Specializes in luxury real estate.', rating: '2/5', commission: '15%', dealsClosed: 200, verified: false, backgroundUrl: Agent2  },
-    { name: 'Broker3', description: 'Known for excellent customer service.', rating: '2/5', commission: '20%', dealsClosed: 150, verified: true, backgroundUrl: Agent3  },
-    { name: 'Broker4', description: 'Experienced in residential and commercial properties.', rating: '4.7/5', commission: '10%', dealsClosed: 100, verified: true, backgroundUrl: Agent4  },
-    { name: 'Broker5', description: 'Specializes in luxury real estate.', rating: '3.5/5', commission: '15%', dealsClosed: 200, verified: false, backgroundUrl: Agent5  },
-    { name: 'Broker6', description: 'Known for excellent customer service.', rating: '4.6/5', commission: '20%', dealsClosed: 150, verified: true, backgroundUrl: Agent6  },
-    { name: 'Broker7', description: 'Experienced in residential and commercial properties.', rating: '4.7/5', commission: '10%', dealsClosed: 100, verified: true, backgroundUrl: Agent7  },
-    { name: 'Broker8', description: 'Specializes in luxury real estate.', rating: '1.5/5', commission: '15%', dealsClosed: 200, verified: false, backgroundUrl: Agent8},
-    { name: 'Broker9', description: 'Known for excellent customer service.', rating: '2.6/5', commission: '20%', dealsClosed: 150, verified: true, backgroundUrl: Agent9},
-    { name: 'Broker10', description: 'Experienced in residential and commercial properties.', rating: '4.7/5', commission: '10%', dealsClosed: 100, verified: true, backgroundUrl: Agent2},
-    { name: 'Broker11', description: 'Specializes in luxury real estate.', rating: '3.5/5', commission: '15%', dealsClosed: 200, verified: false, backgroundUrl: Agent3},
-    { name: 'Broker12', description: 'Known for excellent customer service.', rating: '2.6/5', commission: '20%', dealsClosed: 150, verified: true, backgroundUrl: Agent4},
+    { name: 'Rashi', description: 'Experienced in residential and commercial properties.', rating: '3/5', commission: '10%', dealsClosed: 100, verified: true, backgroundUrl: Agent1  },
+    { name: 'Aman', description: 'Specializes in luxury real estate.', rating: '2/5', commission: '15%', dealsClosed: 200, verified: false, backgroundUrl: Agent2  },
+    { name: 'Manas', description: 'Known for excellent customer service.', rating: '2/5', commission: '20%', dealsClosed: 150, verified: true, backgroundUrl: Agent3  },
+    { name: 'Bardi', description: 'Experienced in residential and commercial properties.', rating: '4.7/5', commission: '10%', dealsClosed: 100, verified: true, backgroundUrl: Agent4  },
+    { name: 'Rahul', description: 'Specializes in luxury real estate.', rating: '3.5/5', commission: '15%', dealsClosed: 200, verified: false, backgroundUrl: Agent5  },
+    { name: 'Rajesh', description: 'Known for excellent customer service.', rating: '4.6/5', commission: '20%', dealsClosed: 150, verified: true, backgroundUrl: Agent6  },
+    { name: 'Ram', description: 'Experienced in residential and commercial properties.', rating: '4.7/5', commission: '10%', dealsClosed: 100, verified: true, backgroundUrl: Agent7  },
+    { name: 'Jay', description: 'Specializes in luxury real estate.', rating: '1.5/5', commission: '15%', dealsClosed: 200, verified: false, backgroundUrl: Agent8},
+    { name: 'Prajwal', description: 'Known for excellent customer service.', rating: '2.6/5', commission: '20%', dealsClosed: 150, verified: true, backgroundUrl: Agent9},
+    { name: 'Mohan', description: 'Experienced in residential and commercial properties.', rating: '4.7/5', commission: '10%', dealsClosed: 100, verified: true, backgroundUrl: Agent2},
+    { name: 'Raju', description: 'Specializes in luxury real estate.', rating: '3.5/5', commission: '15%', dealsClosed: 200, verified: false, backgroundUrl: Agent3},
+    { name: 'Jena', description: 'Known for excellent customer service.', rating: '2.6/5', commission: '20%', dealsClosed: 150, verified: true, backgroundUrl: Agent4},
   ];
 
   const [ratingFilter, setRatingFilter] = React.useState('');

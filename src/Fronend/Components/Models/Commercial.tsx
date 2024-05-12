@@ -145,14 +145,9 @@ const Commercial: React.FC = () => {
       <div className="property-cards">
         {filteredProperties.map((broker, index) => (
           <div key={broker.name} className="property-card" style={{ backgroundImage: `url(${broker.backgroundUrl})` }}>
-            <p className=''>{broker.name}</p>
-            <div className="description">{broker.amenities}</div>
-            <div className="rating">{broker.location}</div>
-            <div className="commission">{broker.price}</div>
-            <div className="deals-closed">{broker.price}</div>
-            <div className="verified">{broker.verified ? 'Verified' : 'Not Verified'}</div>
+            <div className="description">{broker.name} is a {broker.verified ? 'Verified' : 'Not Verified'} property is present in prime location of in {broker.location} with amenities: {broker.amenities} available for {broker.ownership} with a starting price of {broker.price} only!!!</div>
             <button className='experience-button' onClick={() => window.location.href = hrefLink}>
-              Consult Now
+              Experience It!
             </button>
           </div>
         ))}
