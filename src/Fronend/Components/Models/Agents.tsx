@@ -104,7 +104,6 @@ const Agents: React.FC = () => {
             </button>
           </div>
         ))}
-
       </div>
     </div>
   );

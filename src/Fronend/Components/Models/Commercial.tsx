@@ -1,19 +1,27 @@
 import React from 'react';
-import '../Styles/Residential.css'; // Import the CSS file
+import '../Styles/Residential.css'; // Import the CSS filefile
+import Prop1 from '../../../assets/Commercial/1.jpg';
+import Prop2 from '../../../assets/Commercial/2.jpg';
+import Prop3 from '../../../assets/Commercial/3.jpg';
+import Prop4 from '../../../assets/Commercial/4.jpg';
+import Prop5 from '../../../assets/Commercial/5.jpg';
+import Prop6 from '../../../assets/Commercial/6.jpg';
+import Prop7 from '../../../assets/Commercial/7.jpg';
 
 const Commercial: React.FC = () => {
+  const hrefLink = 'https://ac14-2405-204-5215-ab0b-e5f2-e969-3851-b5dd.ngrok-free.app/';
 
   const properties = [
-    { name: 'Office Plaza', amenities: 'Conference Rooms, Cafeteria', type: 'Office Space', size: '5000 sq ft', ownership: 'Lease', availability: 'Immediate', verified: true, location: 'Central Business District', price: '₹ 1,00,000/month' },
-    { name: 'Tech Park Tower', amenities: 'Fitness Center, Parking', type: 'Office Building', size: '10000 sq ft', ownership: 'Buy', availability: 'June 2024', verified: true, location: 'Tech Hub Area', price: '₹ 10 Crores' },
-    { name: 'Commerce Center', amenities: '24/7 Security, High-speed Internet', type: 'Commercial Complex', size: '20000 sq ft', ownership: 'Lease', availability: 'July 2024', verified: true, location: 'Financial District', price: '₹ 2,00,000/month' },
-    { name: 'Business Tower', amenities: 'Conference Rooms, Rooftop Garden', type: 'Office Tower', size: '15000 sq ft', ownership: 'Buy', availability: 'Immediate', verified: true, location: 'Downtown Area', price: '₹ 15 Crores' },
-    { name: 'Corporate Hub', amenities: 'Cafeteria, Lounge Area', type: 'Commercial Building', size: '8000 sq ft', ownership: 'Lease', availability: 'October 2024', verified: true, location: 'Business Park', price: '₹ 1,20,000/month' },
-    { name: 'Executive Plaza', amenities: 'Meeting Rooms, Parking', type: 'Office Complex', size: '12000 sq ft', ownership: 'Buy', availability: 'Immediate', verified: true, location: 'City Center', price: '₹ 12 Crores' },
-    { name: 'Tech Innovation Center', amenities: 'Gym, Cafeteria', type: 'Tech Hub Space', size: '25000 sq ft', ownership: 'Lease', availability: 'August 2024', verified: true, location: 'Tech Hub Area', price: '₹ 3,00,000/month' },
-    { name: 'Commerce Tower', amenities: 'Conference Rooms, Parking', type: 'Commercial Tower', size: '18000 sq ft', ownership: 'Buy', availability: 'November 2024', verified: true, location: 'Financial District', price: '₹ 18 Crores' },
-    { name: 'Business Center', amenities: 'Lounge Area, High-speed Internet', type: 'Office Space', size: '6000 sq ft', ownership: 'Lease', availability: 'Immediate', verified: true, location: 'Central Business District', price: '₹ 80,000/month' },
-    { name: 'Corporate Tower', amenities: 'Meeting Rooms, Rooftop Garden', type: 'Commercial Tower', size: '20000 sq ft', ownership: 'Buy', availability: 'Immediate', verified: true, location: 'Business Park', price: '₹ 20 Crores' }
+    { name: 'Office Plaza', amenities: 'Conference Rooms, Cafeteria', type: 'Office Space', size: '5000 sq ft', ownership: 'Lease', availability: 'Immediate', verified: true, location: 'Central Business District', price: '₹ 1,00,000/month', backgroundUrl: Prop1 },
+    { name: 'Tech Park Tower', amenities: 'Fitness Center, Parking', type: 'Office Building', size: '10000 sq ft', ownership: 'Buy', availability: 'June 2024', verified: true, location: 'Tech Hub Area', price: '₹ 10 Crores', backgroundUrl: Prop2 },
+    { name: 'Commerce Center', amenities: '24/7 Security, High-speed Internet', type: 'Commercial Complex', size: '20000 sq ft', ownership: 'Lease', availability: 'July 2024', verified: true, location: 'Financial District', price: '₹ 2,00,000/month', backgroundUrl: Prop3 },
+    { name: 'Business Tower', amenities: 'Conference Rooms, Rooftop Garden', type: 'Office Tower', size: '15000 sq ft', ownership: 'Buy', availability: 'Immediate', verified: true, location: 'Downtown Area', price: '₹ 15 Crores', backgroundUrl: Prop4},
+    { name: 'Corporate Hub', amenities: 'Cafeteria, Lounge Area', type: 'Commercial Building', size: '8000 sq ft', ownership: 'Lease', availability: 'October 2024', verified: true, location: 'Business Park', price: '₹ 1,20,000/month', backgroundUrl: Prop5 },
+    { name: 'Executive Plaza', amenities: 'Meeting Rooms, Parking', type: 'Office Complex', size: '12000 sq ft', ownership: 'Buy', availability: 'Immediate', verified: true, location: 'City Center', price: '₹ 12 Crores', backgroundUrl: Prop6},
+    { name: 'Tech Innovation Center', amenities: 'Gym, Cafeteria', type: 'Tech Hub Space', size: '25000 sq ft', ownership: 'Lease', availability: 'August 2024', verified: true, location: 'Tech Hub Area', price: '₹ 3,00,000/month', backgroundUrl: Prop7},
+    { name: 'Commerce Tower', amenities: 'Conference Rooms, Parking', type: 'Commercial Tower', size: '18000 sq ft', ownership: 'Buy', availability: 'November 2024', verified: true, location: 'Financial District', price: '₹ 18 Crores', backgroundUrl: Prop1},
+    { name: 'Business Center', amenities: 'Lounge Area, High-speed Internet', type: 'Office Space', size: '6000 sq ft', ownership: 'Lease', availability: 'Immediate', verified: true, location: 'Central Business District', price: '₹ 80,000/month', backgroundUrl: Prop2 },
+    { name: 'Corporate Tower', amenities: 'Meeting Rooms, Rooftop Garden', type: 'Commercial Tower', size: '20000 sq ft', ownership: 'Buy', availability: 'Immediate', verified: true, location: 'Business Park', price: '₹ 20 Crores', backgroundUrl: Prop3}
   ];
 
   const [typeFilter, setTypeFilter] = React.useState('');
@@ -133,13 +141,18 @@ const Commercial: React.FC = () => {
           </select>
         </div>
       </div>
-
+      
       <div className="property-cards">
-        {filteredProperties.map((property, index) => (
-          <div className="property-card" key={index}>
-            <p className=''>{property.name}</p>
-            <button className='experience-button'>
-              Experience
+        {filteredProperties.map((broker, index) => (
+          <div key={broker.name} className="property-card" style={{ backgroundImage: `url(${broker.backgroundUrl})` }}>
+            <p className=''>{broker.name}</p>
+            <div className="description">{broker.amenities}</div>
+            <div className="rating">{broker.location}</div>
+            <div className="commission">{broker.price}</div>
+            <div className="deals-closed">{broker.price}</div>
+            <div className="verified">{broker.verified ? 'Verified' : 'Not Verified'}</div>
+            <button className='experience-button' onClick={() => window.location.href = hrefLink}>
+              Consult Now
             </button>
           </div>
         ))}

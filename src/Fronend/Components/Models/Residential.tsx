@@ -1,32 +1,41 @@
 import React from 'react';
 import '../Styles/Residential.css'; // Import the CSS file
-import Agent3 from '../../../assets/Agent3.jpg';
-import Agent4 from '../../../assets/Agent4.jpg';
+import Prop1 from '../../../assets/Residential/1.jpg';
+import Prop2 from '../../../assets/Residential/2.jpg';
+import Prop3 from '../../../assets/Residential/3.jpg';
+import Prop4 from '../../../assets/Residential/4.jpg';
+import Prop5 from '../../../assets/Residential/5.jpg';
+import Prop6 from '../../../assets/Residential/6.jpg';
+import Prop7 from '../../../assets/Residential/7.jpg';
+import Prop8 from '../../../assets/Residential/8.jpg';
+import Prop9 from '../../../assets/Residential/9.jpg';
+import Prop10 from '../../../assets/Residential/10.jpg';
+import Prop11 from '../../../assets/Residential/11.jpg';
 
 const Residential: React.FC = () => {
   const hrefLink = 'https://ac14-2405-204-5215-ab0b-e5f2-e969-3851-b5dd.ngrok-free.app/';
 
   const properties = [
-    { name: 'Godreej Amira', amanities: 'GYM, Swiming pool, Garden', type: 'Urban Housing', room: '2 BHK', owenership: 'Buy', possision: 'May 2025', verified: true, location: 'Indiranagar', price: '₹ 1.5 Cr' },
-    { name: 'Property 2', amanities: 'GYM, Swiming pool, Garden', type: 'Urban Housing', room: '3 BHK', owenership: 'Buy', possision: 'June 2023', verified: true, location: 'Whitefield', price: '₹ 2.2 Cr' },
-    { name: 'Property 3', amanities: 'Clubhouse, Tennis court, Playground', type: 'Villa', room: '4 BHK', owenership: 'Buy', possision: 'December 2022', verified: true, location: 'Electronic City', price: '₹ 3.5 Cr' },
-    { name: 'Property 4', amanities: 'Swimming pool, Gym, Garden', type: 'Apartment', room: '2 BHK', owenership: 'Rent', possision: 'Immediate', verified: false, location: 'Koramangala', price: '₹ 35,000/month' },
-    { name: 'Property 5', amanities: 'Clubhouse, Basketball court, Jogging track', type: 'Villa', room: '5 BHK', owenership: 'Buy', possision: 'April 2024', verified: true, location: 'Sarjapur Road', price: '₹ 4.8 Cr' },
-    { name: 'Property 6', amanities: 'Swimming pool, Gym, Garden', type: 'Apartment', room: '1 BHK', owenership: 'Rent', possision: 'Immediate', verified: true, location: 'Marathahalli', price: '₹ 20,000/month' },
-    { name: 'Property 7', amanities: 'Clubhouse, Tennis court, Playground', type: 'Villa', room: '3 BHK', owenership: 'Buy', possision: 'July 2023', verified: true, location: 'HSR Layout', price: '₹ 1.8 Cr' },
-    { name: 'Property 8', amanities: 'Swimming pool, Gym, Garden', type: 'Apartment', room: '2 BHK', owenership: 'Rent', possision: 'Immediate', verified: true, location: 'JP Nagar', price: '₹ 30,000/month' },
-    { name: 'Property 9', amanities: 'Clubhouse, Basketball court, Jogging track', type: 'Villa', room: '4 BHK', owenership: 'Buy', possision: 'October 2022', verified: false, location: 'Bannerghatta Road', price: '₹ 3.2 Cr' },
-    { name: 'Property 10', amanities: 'Swimming pool, Gym, Garden', type: 'Apartment', room: '1 BHK', owenership: 'Rent', possision: 'Immediate', verified: true, location: 'BTM Layout', price: '₹ 18,000/month' },
-    { name: 'Property 11', amanities: 'Clubhouse, Tennis court, Playground', type: 'Villa', room: '3 BHK', owenership: 'Buy', possision: 'August 2023', verified: true, location: 'Bellandur', price: '₹ 2.1 Cr' },
-    { name: 'Property 12', amanities: 'Swimming pool, Gym, Garden', type: 'Apartment', room: '2 BHK', owenership: 'Rent', possision: 'Immediate', verified: true, location: 'Indiranagar', price: '₹ 40,000/month' },
-    { name: 'Property 13', amanities: 'Clubhouse, Basketball court, Jogging track', type: 'Villa', room: '4 BHK', owenership: 'Buy', possision: 'November 2022', verified: true, location: 'Whitefield', price: '₹ 3.6 Cr' },
-    { name: 'Property 14', amanities: 'Swimming pool, Gym, Garden', type: 'Apartment', room: '1 BHK', owenership: 'Rent', possision: 'Immediate', verified: false, location: 'Electronic City', price: '₹ 22,000/month' },
-    { name: 'Property 15', amanities: 'Clubhouse, Tennis court, Playground', type: 'Villa', room: '3 BHK', owenership: 'Buy', possision: 'September 2023', verified: true, location: 'Koramangala', price: '₹ 1.9 Cr' },
-    { name: 'Property 16', amanities: 'Swimming pool, Gym, Garden', type: 'Apartment', room: '2 BHK', owenership: 'Rent', possision: 'Immediate', verified: true, location: 'Sarjapur Road', price: '₹ 32,000/month' },
-    { name: 'Property 17', amanities: 'Clubhouse, Basketball court, Jogging track', type: 'Villa', room: '4 BHK', owenership: 'Buy', possision: 'January 2023', verified: true, location: 'Marathahalli', price: '₹ 3.8 Cr' },
-    { name: 'Property 18', amanities: 'Swimming pool, Gym, Garden', type: 'Apartment', room: '1 BHK', owenership: 'Rent', possision: 'Immediate', verified: true, location: 'HSR Layout', price: '₹ 25,000/month' },
-    { name: 'Property 19', amanities: 'Clubhouse, Tennis court, Playground', type: 'Villa', room: '3 BHK', owenership: 'Buy', possision: 'October 2023', verified: false, location: 'JP Nagar', price: '₹ 2.3 Cr' },
-    { name: 'Property 20', amanities: 'Swimming pool, Gym, Garden', type: 'Apartment', room: '2 BHK', owenership: 'Rent', possision: 'Immediate', verified: true, location: 'Bannerghatta Road', price: '₹ 28,000/month' }
+    { name: 'Godreej Amira', amanities: 'GYM, Swiming pool, Garden', type: 'Urban Housing', room: '2 BHK', owenership: 'Buy', possision: 'May 2025', verified: true, location: 'Indiranagar', price: '₹ 1.5 Cr', backgroundUrl: Prop1 },
+    { name: 'Property 2', amanities: 'GYM, Swiming pool, Garden', type: 'Urban Housing', room: '3 BHK', owenership: 'Buy', possision: 'June 2023', verified: true, location: 'Whitefield', price: '₹ 2.2 Cr', backgroundUrl: Prop2 },
+    { name: 'Property 3', amanities: 'Clubhouse, Tennis court, Playground', type: 'Villa', room: '4 BHK', owenership: 'Buy', possision: 'December 2022', verified: true, location: 'Electronic City', price: '₹ 3.5 Cr', backgroundUrl: Prop3 },
+    { name: 'Property 4', amanities: 'Swimming pool, Gym, Garden', type: 'Apartment', room: '2 BHK', owenership: 'Rent', possision: 'Immediate', verified: false, location: 'Koramangala', price: '₹ 35,000/month', backgroundUrl: Prop4 },
+    { name: 'Property 5', amanities: 'Clubhouse, Basketball court, Jogging track', type: 'Villa', room: '5 BHK', owenership: 'Buy', possision: 'April 2024', verified: true, location: 'Sarjapur Road', price: '₹ 4.8 Cr', backgroundUrl: Prop5},
+    { name: 'Property 6', amanities: 'Swimming pool, Gym, Garden', type: 'Apartment', room: '1 BHK', owenership: 'Rent', possision: 'Immediate', verified: true, location: 'Marathahalli', price: '₹ 20,000/month', backgroundUrl: Prop6},
+    { name: 'Property 7', amanities: 'Clubhouse, Tennis court, Playground', type: 'Villa', room: '3 BHK', owenership: 'Buy', possision: 'July 2023', verified: true, location: 'HSR Layout', price: '₹ 1.8 Cr', backgroundUrl: Prop7},
+    { name: 'Property 8', amanities: 'Swimming pool, Gym, Garden', type: 'Apartment', room: '2 BHK', owenership: 'Rent', possision: 'Immediate', verified: true, location: 'JP Nagar', price: '₹ 30,000/month', backgroundUrl: Prop8},
+    { name: 'Property 9', amanities: 'Clubhouse, Basketball court, Jogging track', type: 'Villa', room: '4 BHK', owenership: 'Buy', possision: 'October 2022', verified: false, location: 'Bannerghatta Road', price: '₹ 3.2 Cr', backgroundUrl: Prop9},
+    { name: 'Property 10', amanities: 'Swimming pool, Gym, Garden', type: 'Apartment', room: '1 BHK', owenership: 'Rent', possision: 'Immediate', verified: true, location: 'BTM Layout', price: '₹ 18,000/month', backgroundUrl: Prop10},
+    { name: 'Property 11', amanities: 'Clubhouse, Tennis court, Playground', type: 'Villa', room: '3 BHK', owenership: 'Buy', possision: 'August 2023', verified: true, location: 'Bellandur', price: '₹ 2.1 Cr', backgroundUrl: Prop11},
+    { name: 'Property 12', amanities: 'Swimming pool, Gym, Garden', type: 'Apartment', room: '2 BHK', owenership: 'Rent', possision: 'Immediate', verified: true, location: 'Indiranagar', price: '₹ 40,000/month', backgroundUrl: Prop1},
+    { name: 'Property 13', amanities: 'Clubhouse, Basketball court, Jogging track', type: 'Villa', room: '4 BHK', owenership: 'Buy', possision: 'November 2022', verified: true, location: 'Whitefield', price: '₹ 3.6 Cr', backgroundUrl: Prop2},
+    { name: 'Property 14', amanities: 'Swimming pool, Gym, Garden', type: 'Apartment', room: '1 BHK', owenership: 'Rent', possision: 'Immediate', verified: false, location: 'Electronic City', price: '₹ 22,000/month', backgroundUrl: Prop3},
+    { name: 'Property 15', amanities: 'Clubhouse, Tennis court, Playground', type: 'Villa', room: '3 BHK', owenership: 'Buy', possision: 'September 2023', verified: true, location: 'Koramangala', price: '₹ 1.9 Cr', backgroundUrl: Prop4},
+    { name: 'Property 16', amanities: 'Swimming pool, Gym, Garden', type: 'Apartment', room: '2 BHK', owenership: 'Rent', possision: 'Immediate', verified: true, location: 'Sarjapur Road', price: '₹ 32,000/month', backgroundUrl: Prop5},
+    { name: 'Property 17', amanities: 'Clubhouse, Basketball court, Jogging track', type: 'Villa', room: '4 BHK', owenership: 'Buy', possision: 'January 2023', verified: true, location: 'Marathahalli', price: '₹ 3.8 Cr', backgroundUrl: Prop6},
+    { name: 'Property 18', amanities: 'Swimming pool, Gym, Garden', type: 'Apartment', room: '1 BHK', owenership: 'Rent', possision: 'Immediate', verified: true, location: 'HSR Layout', price: '₹ 25,000/month', backgroundUrl: Prop7},
+    { name: 'Property 19', amanities: 'Clubhouse, Tennis court, Playground', type: 'Villa', room: '3 BHK', owenership: 'Buy', possision: 'October 2023', verified: false, location: 'JP Nagar', price: '₹ 2.3 Cr', backgroundUrl: Prop8},
+    { name: 'Property 20', amanities: 'Swimming pool, Gym, Garden', type: 'Apartment', room: '2 BHK', owenership: 'Rent', possision: 'Immediate', verified: true, location: 'Bannerghatta Road', price: '₹ 28,000/month', backgroundUrl: Prop9},
   ];
 
   const [typeFilter, setTypeFilter] = React.useState('');
@@ -146,68 +155,19 @@ const Residential: React.FC = () => {
           </div>
       </div>
       <div className="property-cards">
-        {filteredProperties.map(property => (
-          <div className="property-card">
-            <p className=''>{property.name}</p>
+        {filteredProperties.map((broker, index) => (
+          <div key={broker.name} className="property-card" style={{ backgroundImage: `url(${broker.backgroundUrl})` }}>
+            <p className=''>{broker.name}</p>
+            <div className="description">{broker.amanities}</div>
+            <div className="rating">{broker.possision}</div>
+            <div className="commission">{broker.price}</div>
+            <div className="deals-closed">{broker.price}</div>
+            <div className="verified">{broker.verified ? 'Verified' : 'Not Verified'}</div>
             <button className='experience-button' onClick={() => window.location.href = hrefLink}>
-              Experience
+              Consult Now
             </button>
           </div>
         ))}
-        <div className="property-card">
-          <p className=''>Property 1</p>
-          <button className='experience-button' onClick={() => window.location.href = hrefLink}>
-           Experience
-          </button>
-        </div>
-        <div className="property-card">
-          <p className=''>Property 1</p>
-          <button className='experience-button' onClick={() => window.location.href = hrefLink}>
-           Experience
-          </button>
-        </div>
-        <div className="property-card">
-          <p className=''>Property 1</p>
-          <button className='experience-button' onClick={() => window.location.href = hrefLink}>
-           Experience
-          </button>
-        </div>
-        <div className="property-card">
-          <p className=''>Property 1</p>
-          <button className='experience-button' onClick={() => window.location.href = hrefLink}>
-           Experience
-          </button>
-        </div>
-        <div className="property-card">
-          <p className=''>Property 1</p>
-          <button className='experience-button' onClick={() => window.location.href = hrefLink}>
-           Experience
-          </button>
-        </div>
-        <div className="property-card">
-          <p className=''>Property 1</p>
-          <button className='experience-button' onClick={() => window.location.href = hrefLink}>
-           Experience
-          </button>
-        </div>
-        <div className="property-card">
-          <p className=''>Property 1</p>
-          <button className='experience-button' onClick={() => window.location.href = hrefLink}>
-           Experience
-          </button>
-        </div>
-        <div className="property-card">
-          <p className=''>Property 1</p>
-          <button className='experience-button' onClick={() => window.location.href = hrefLink}>
-           Experience
-          </button>
-        </div>
-        <div className="property-card">
-          <p className=''>Property 1</p>
-          <button className='experience-button' onClick={() => window.location.href = hrefLink}>
-           Experience
-          </button>
-        </div>
       </div>
     </div>
   );
